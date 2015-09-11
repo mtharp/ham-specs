@@ -8,7 +8,7 @@ Summary:        Run-time library to control radio transceivers and receivers
 Group:          System Environment/Libraries
 License:        GPLv2+ and LGPLv2+
 URL:            http://hamlib.sourceforge.net
-Source0:        hamlib-dummy.tar.gz
+Source0:        hamlib-%{version}.tar.gz
 Patch0:         hamlib-bindings.patch
 BuildRequires:  python-devel, swig, gd-devel, libxml2-devel, tcl-devel
 BuildRequires:  libusb-devel, pkgconfig, boost-devel, libtool-ltdl-devel
