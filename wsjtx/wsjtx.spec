@@ -7,7 +7,7 @@ Group:          System Environment/Libraries
 License:        GPLv3
 URL:            http://physics.princeton.edu/pulsar/k1jt/wsjtx.html
 Source0:        wsjtx-%{version}.tar.gz
-BuildRequires:  hamlib-devel, cmake, rubygem-asciidoctor, gcc-gfortran, fftw-devel
+BuildRequires:  hamlib-devel, cmake, asciidoc, rubygem-asciidoctor, gcc-gfortran, fftw-devel
 BuildRequires:  qt5-qtbase-devel, qt5-qtmultimedia-devel
 BuildRequires:  qt5-qtserialport-devel, qt5-qtdeclarative-devel
 
