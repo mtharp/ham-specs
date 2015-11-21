@@ -31,6 +31,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %doc AUTHORS BUGS COPYING README THANKS
 %{_bindir}/*
 %{_mandir}/man*/*
+%{_mandir}/man*/.*
 /usr/share/pixmaps/wsjtx_icon.png
 /usr/share/applications/wsjtx.desktop
 /usr/share/wsjtx/JPLEPH
