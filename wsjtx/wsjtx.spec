@@ -34,4 +34,5 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %{_mandir}/man*/.*
 /usr/share/pixmaps/wsjtx_icon.png
 /usr/share/applications/wsjtx.desktop
-/usr/share/wsjtx/JPLEPH
+/usr/share/wsjtx/*
+/usr/share/doc/wsjtx/*
