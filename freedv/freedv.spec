@@ -21,13 +21,16 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  portaudio-devel
 BuildRequires:  libsndfile-devel
 BuildRequires:  libsamplerate-devel
-#BuildRequires:  speex-devel
+BuildRequires:  speex-devel
 BuildRequires:  hamlib-devel
 BuildRequires:  alsa-lib-devel
 BuildRequires:  libao-devel
 BuildRequires:  gsm-devel
 # For codec2 checkout
 #BuildRequires:  subversion
+%if 0%{?fedora} >= 22
+BuildRequires:  speexdsp-devel
+%endif
 
 #BuildRequires:  sox-devel
 
@@ -56,8 +59,9 @@ export LDFLAGS="-Wl,--as-needed"
 %cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo \
        -DWXCONFIG="%{_bindir}/wx-config-3.0" \
        -DWXRC="%{_bindir}/wxrc-3.0" \
-       -DUSE_STATIC_SOX=FALSE \
+       -DUSE_STATIC_SOX=TRUE \
        -DUSE_STATIC_CODEC2=FALSE \
+       -DUSE_STATIC_SPEEXDSP=FALSE \
        ../
 
 make %{?_smp_mflags}
